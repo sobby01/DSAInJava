@@ -46,4 +46,35 @@ public class graph_representation {
             System.out.println();
         }
     }
+
+    public ArrayList<ArrayList<Integer>> getAdjList(){
+        for (int i = 0; i <= n; i++)
+            adjList.add(new ArrayList<Integer>());
+
+        //edge 1->2
+        adjList.get(1).add(2);
+        adjList.get(2).add(1);
+
+        //edge 2->3
+        adjList.get(2).add(4);
+        adjList.get(4).add(2);
+
+        //edge 2->3
+        adjList.get(2).add(7);
+        adjList.get(7).add(2);
+
+        //edge 1->3
+        adjList.get(4).add(6);
+        adjList.get(6).add(4);
+
+        //edge 1->3
+        adjList.get(7).add(6);
+        adjList.get(6).add(7);
+
+        //edge 1->3
+        adjList.get(3).add(5);
+        adjList.get(5).add(3);
+
+        return adjList;
+    }
 }
