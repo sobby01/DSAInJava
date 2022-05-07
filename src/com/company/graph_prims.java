@@ -37,7 +37,7 @@ public class graph_prims {
             ans += currentNode.weight;
             visited[u] = true;
 
-            ArrayList<ArrayList<Integer>> adjNhbr = new ArrayList<>();
+            ArrayList<ArrayList<Integer>> adjNhbr = adj.get(u);
 
             for(ArrayList<Integer> nhbr : adjNhbr){
                 int ver = nhbr.get(0);
