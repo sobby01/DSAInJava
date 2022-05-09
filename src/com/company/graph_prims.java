@@ -19,7 +19,12 @@ class Node implements Comparable<Node>{
 }
 
 public class graph_prims {
-
+    //TC : O((E+V)logV)
+    //This algorithm can work only on undirected graph
+    //Prims can handle negative edge cases
+    //Dijkstra's algorithm finds the shortest path but Prims find MST
+    //Prim’s algorithm, on the other hand,
+    //is used when we want to minimize material costs in constructing roads that connect multiple points to each other.
     public int MST(int v, ArrayList<ArrayList<ArrayList<Integer>>> adj){
         boolean [] visited = new boolean[v+1];
         PriorityQueue<Node> pq = new PriorityQueue<Node>();

@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
+//This algorithm can work both on directed and undirected graph
+//THis algorithm will fail in negative edge cases
+//TC : O(V + ELogV)
+//Dijkstra’s algorithm is used when we want to save time and fuel traveling from one point to another.
 public class graph_dijkstra {
     public int[] MST(int v, ArrayList<ArrayList<ArrayList<Integer>>> adj){
         boolean [] visited = new boolean[v+1];

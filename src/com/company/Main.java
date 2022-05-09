@@ -5,6 +5,9 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
+        graph_representation_weighted grw = new graph_representation_weighted();
+        grw.Initialize();
+
         graph_representation gr = new graph_representation();
         gr.AdjList();
 
