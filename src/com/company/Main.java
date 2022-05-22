@@ -5,6 +5,14 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
+        slidingwindow_firstnegativeinteger fni = new slidingwindow_firstnegativeinteger();
+        fni.firstNegativeInteger(new int[]{12,-1,-7,8,-15,30, 16,28}, 3);
+
+        SlidingMaxWindow smw = new SlidingMaxWindow();
+        smw.maxSlidingWindow(new int[]{1,3,1,2,0,5}, 3);
+
+
+
         graph_representation_weighted grw = new graph_representation_weighted();
         grw.Initialize();
 
