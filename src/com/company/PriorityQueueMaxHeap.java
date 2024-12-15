@@ -8,7 +8,8 @@ public class PriorityQueueMaxHeap {
     static class maxHeapComparator implements Comparator<Integer> {
         @Override
         public int compare (Integer x, Integer y) {
-            return y-x; //y -> 100- x ->20 = 80 ?// 1, 0, -1
+            int z = y-x; //y -> 100- x ->20 = 80 ?// 1, 0, -1
+            return z;
         }
     }
 
@@ -27,7 +28,8 @@ public class PriorityQueueMaxHeap {
         System.out.print("\nMAX Heap : ");
         Iterator<Integer> iter = maxHeap.iterator();
         while(iter.hasNext()) {
-            System.out.print(iter.next() + " ");
+            Integer elem = maxHeap.poll();
+            System.out.print(elem + " ");
         }
     }
 }
